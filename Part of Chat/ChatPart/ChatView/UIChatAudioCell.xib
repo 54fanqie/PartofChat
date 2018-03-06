@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="91" id="lup-sO-qRE" customClass="UIChatAudioCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lup-sO-qRE" id="ahl-n4-HdI">
+                <frame key="frameInset" width="320" height="84"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NPV-PR-AsU">
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="H6g-o3-Bk7"/>
+                            <constraint firstAttribute="height" constant="45" id="T3G-9O-nAr"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYq-Zs-sGa">
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="msg_bg_leftbubble_normal" translatesAutoresizingMaskIntoConstraints="NO" id="fBp-zO-tIu">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="bGT-Xt-MJ1"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="fb6-so-jFl"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7sC-Ty-wj7">
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="IUA-IP-iiN"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="giy-R5-OFj"/>
+                            <constraint firstAttribute="height" constant="45" id="scA-sD-J0R"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="45" id="wxf-N5-HcS"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="giy-R5-OFj"/>
+                                <exclude reference="wxf-N5-HcS"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="msg_bg_rightbubble_normal" translatesAutoresizingMaskIntoConstraints="NO" id="ms9-oC-P4Z">
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="pf6-RL-cTT"/>
+                            <constraint firstAttribute="width" constant="115" id="qT9-BY-bAw"/>
+                            <constraint firstAttribute="height" constant="40" id="rY3-9L-Ir9"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="qT9-BY-bAw"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightAudioPlay" translatesAutoresizingMaskIntoConstraints="NO" id="EGI-Wo-utC">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="23" id="2aU-6g-oLl"/>
+                            <constraint firstAttribute="height" constant="23" id="MOV-Xh-L7S"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leftAudioPlay" translatesAutoresizingMaskIntoConstraints="NO" id="SV1-Or-hMI">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="23" id="49v-yC-Kvt"/>
+                            <constraint firstAttribute="height" constant="23" id="6YE-AK-nc1"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="fBp-zO-tIu" secondAttribute="bottom" constant="1" id="0Kb-Pj-g4u"/>
+                    <constraint firstItem="7sC-Ty-wj7" firstAttribute="top" secondItem="ahl-n4-HdI" secondAttribute="top" constant="10" id="3si-37-RPt"/>
+                    <constraint firstItem="EGI-Wo-utC" firstAttribute="centerY" secondItem="ms9-oC-P4Z" secondAttribute="centerY" id="4IF-sO-rPb"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="MYq-Zs-sGa" secondAttribute="trailing" constant="60" id="F5c-57-4Ue"/>
+                    <constraint firstItem="MYq-Zs-sGa" firstAttribute="leading" secondItem="NPV-PR-AsU" secondAttribute="trailing" constant="15" id="FS7-J8-Hid"/>
+                    <constraint firstItem="ms9-oC-P4Z" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ahl-n4-HdI" secondAttribute="leadingMargin" constant="70" id="Q3z-p2-P8I"/>
+                    <constraint firstItem="fBp-zO-tIu" firstAttribute="trailing" secondItem="SV1-Or-hMI" secondAttribute="trailing" constant="10" id="YuR-6O-LFC"/>
+                    <constraint firstItem="NPV-PR-AsU" firstAttribute="leading" secondItem="ahl-n4-HdI" secondAttribute="leading" constant="10" id="Yum-Wn-Pcy"/>
+                    <constraint firstItem="7sC-Ty-wj7" firstAttribute="leading" secondItem="ms9-oC-P4Z" secondAttribute="trailing" constant="8" id="ffa-GW-bcm"/>
+                    <constraint firstItem="NPV-PR-AsU" firstAttribute="top" secondItem="ahl-n4-HdI" secondAttribute="top" constant="10" id="hd5-Yn-8Jw"/>
+                    <constraint firstItem="SV1-Or-hMI" firstAttribute="centerY" secondItem="fBp-zO-tIu" secondAttribute="centerY" id="imT-uc-AUO"/>
+                    <constraint firstItem="fBp-zO-tIu" firstAttribute="top" secondItem="MYq-Zs-sGa" secondAttribute="bottom" constant="5" id="ioH-01-iOA"/>
+                    <constraint firstItem="ms9-oC-P4Z" firstAttribute="centerY" secondItem="7sC-Ty-wj7" secondAttribute="centerY" id="mtk-S6-Vms"/>
+                    <constraint firstItem="EGI-Wo-utC" firstAttribute="leading" secondItem="ms9-oC-P4Z" secondAttribute="leading" constant="10" id="n82-xx-jZl"/>
+                    <constraint firstItem="fBp-zO-tIu" firstAttribute="leading" secondItem="NPV-PR-AsU" secondAttribute="trailing" constant="8" id="qdi-8U-JKX"/>
+                    <constraint firstItem="MYq-Zs-sGa" firstAttribute="top" secondItem="NPV-PR-AsU" secondAttribute="top" id="quA-QE-yih"/>
+                    <constraint firstAttribute="trailing" secondItem="7sC-Ty-wj7" secondAttribute="trailing" constant="10" id="sii-fY-xb9"/>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="fBp-zO-tIu" secondAttribute="trailing" constant="70" id="xLS-X4-fAd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="leftAudioIV" destination="fBp-zO-tIu" id="WUQ-Do-PeV"/>
+                <outlet property="leftAudioPlay" destination="SV1-Or-hMI" id="YWa-Hx-Kvk"/>
+                <outlet property="myHeadImageIV" destination="7sC-Ty-wj7" id="8Nx-ae-mco"/>
+                <outlet property="otherHeadImageIV" destination="NPV-PR-AsU" id="kl7-gn-oaW"/>
+                <outlet property="personName" destination="MYq-Zs-sGa" id="zpe-nE-FAG"/>
+                <outlet property="rightAudioIV" destination="ms9-oC-P4Z" id="qNI-eZ-kD7"/>
+                <outlet property="rightAudioPlay" destination="EGI-Wo-utC" id="f80-9q-ocs"/>
+            </connections>
+            <point key="canvasLocation" x="78" y="225.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="leftAudioPlay" width="60" height="60"/>
+        <image name="msg_bg_leftbubble_normal" width="43" height="40"/>
+        <image name="msg_bg_rightbubble_normal" width="37" height="35"/>
+        <image name="rightAudioPlay" width="60" height="60"/>
+    </resources>
+</document>
